@@ -1,38 +1,40 @@
-## Структура проекта
-
-```text
-├── backend/            # Бэкенд-часть на Python
-│   ├── app.py          # Точка входа в API
-│   ├── database.py     # Подключение к БД
-│   └── ...
-├── src/                # Фронтенд-часть на React (Vite)
-├── package.json        # Зависимости фронтенда
-├── requirements.txt    # Зависимости бэкенда
-└── README.md           # Инструкция по запуску
-
 Инструкция по развертыванию
-
 Клонирование репозитория
-git clone https://github.com/noise878/NutriSafe
+Bash
+
+git clone [https://github.com/noise878/NutriSafe](https://github.com/noise878/NutriSafe)
 cd nutrisafe
 
-Настройка и запуск Бэкенда 
+Настройка и запуск Бэкенда
 
-cd backend
-python -m venv venv
-.\venvScripts\Activate
+    Перейдите в папку бэкенда, создайте и активируйте виртуальное окружение:
+    Bash
 
-Установите все необходимые зависимости
+    cd backend
+    python -m venv venv
+    # Для Windows:
+    .\\venv\\Scripts\\activate
+    # Для Linux/macOS:
+    source venv/bin/activate
 
-pip install -r requirements.txt
+    Установите все необходимые зависимости:
+    Bash
 
-Запустите бэкенд-сервер
+    pip install -r requirements.txt
 
-python app.py
+    Запустите бэкенд-сервер:
+    Bash
+
+    python app.py
 
 Настройка и запуск Фронтенда (React + Vite)
 
-npm install
+    Перейдите в корневую директорию проекта (или туда, где находится package.json) и установите зависимости:
+    Bash
 
-npm run dev
+    npm install
 
+    Запустите сервер разработки:
+    Bash
+
+    npm run dev
