@@ -1,40 +1,101 @@
-Инструкция по развертыванию
-Клонирование репозитория
-Bash
+# 🚀 Инструкция по развертыванию NutriSafe
 
-git clone [https://github.com/noise878/NutriSafe](https://github.com/noise878/NutriSafe)
-cd nutrisafe
+## 📥 Клонирование репозитория
 
-Настройка и запуск Бэкенда
+```bash
+git clone https://github.com/noise878/NutriSafe
+cd NutriSafe
+```
 
-    Перейдите в папку бэкенда, создайте и активируйте виртуальное окружение:
-    Bash
+---
 
-    cd backend
-    python -m venv venv
-    # Для Windows:
-    .\\venv\\Scripts\\activate
-    # Для Linux/macOS:
-    source venv/bin/activate
+# ⚙️ Настройка и запуск Backend
 
-    Установите все необходимые зависимости:
-    Bash
+### 1. Перейдите в папку сервера
 
-    pip install -r requirements.txt
+```bash
+cd backend
+```
 
-    Запустите бэкенд-сервер:
-    Bash
+### 2. Создайте виртуальное окружение
 
-    python app.py
+```bash
+python -m venv venv
+```
 
-Настройка и запуск Фронтенда (React + Vite)
+### 3. Активируйте виртуальное окружение
 
-    Перейдите в корневую директорию проекта (или туда, где находится package.json) и установите зависимости:
-    Bash
+**Windows**
 
-    npm install
+```bash
+.\venv\Scripts\activate
+```
 
-    Запустите сервер разработки:
-    Bash
+**Linux / macOS**
 
-    npm run dev
+```bash
+source venv/bin/activate
+```
+
+### 4. Установите зависимости
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Запустите сервер
+
+```bash
+python app.py
+```
+
+После успешного запуска backend будет готов принимать запросы.
+
+---
+
+# 💻 Настройка и запуск Frontend (React + Vite)
+
+### 1. Перейдите в корневую папку проекта
+
+Убедитесь, что вы находитесь в директории, где расположен файл `package.json`.
+
+### 2. Установите зависимости
+
+```bash
+npm install
+```
+
+### 3. Запустите сервер разработки
+
+```bash
+npm run dev
+```
+
+После запуска Vite откройте в браузере адрес, который появится в терминале (обычно `http://localhost:5173`).
+
+---
+
+## ✅ Готово!
+
+После запуска обоих сервисов:
+
+- 🖥️ **Backend** работает через `python app.py`;
+- ⚛️ **Frontend** работает через `npm run dev`;
+- 🌐 Откройте приложение в браузере по адресу, который выведет Vite.
+
+---
+
+## 📁 Структура запуска
+
+```text
+NutriSafe/
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── ...
+│
+├── src/
+├── package.json
+└── ...
+```
