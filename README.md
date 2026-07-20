@@ -92,9 +92,9 @@ NutriSafe/
 │
 ├── backend/
 │   ├── app.py
-│   ├── requirements.txt
+│   
 │   └── ...
-│
+├── requirements.txt
 ├── src/
 ├── package.json
 └── ...
